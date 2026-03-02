@@ -1,4 +1,4 @@
-# AGEWELL: Evidence-Based Longevity Engine  
+# AGEWELL: Evidence-Based Longevity RAG Engine  
 **"Age better with evidence."**
 
 Built by `@lerenaminy`.
