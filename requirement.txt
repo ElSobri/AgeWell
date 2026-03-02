@@ -1,2 +1,7 @@
-pip install streamlit faiss-cpu numpy sentence-transformers google-generativeai python-dotenv
+streamlit
+faiss-cpu
+numpy
+sentence-transformers
+google-generativeai
+python-dotenv
 pip freeze > requirements.txt
