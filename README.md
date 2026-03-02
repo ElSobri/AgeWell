@@ -1,6 +1,8 @@
 # AGEWELL: Evidence-Based Longevity Engine  
 **"Age better with evidence."**
 
+Built by `@lerenaminy`.
+
 ## Project Vision
 Traditional health reports are static and siloed. Users receive blood work (ApoB, HbA1c, etc.) but lack an integrated framework to translate numbers into action. **AgeWell** acts as a **Clinical Reasoning Engine**, mimicking the logic of a senior longevity physician by cross-referencing individual biometrics against the latest peer-reviewed literature.
 
